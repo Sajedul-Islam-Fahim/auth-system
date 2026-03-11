@@ -22,7 +22,7 @@ const Login = () => {
     setLoading(true);
     try {
       await login(formData);
-      navigate("/profile");
+      navigate("/profile-info");
     } catch (err) {
       if (err.response?.data?.errors) {
         setErrors(err.response.data.errors);
